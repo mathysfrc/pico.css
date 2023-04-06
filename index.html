@@ -4,79 +4,106 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Discovering Pico.css</title>
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css" />
-    <link rel="stylesheet" href="css/pico.classless.min.css">
-    <link rel="stylesheet" href="style.css" />
-
+    <title>Discovering PicoCss</title>
+    <!-- chargement feuille de style framework Pico -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
-
   <body>
-
-    <header>
-    <nav>
-  <ul>
-    <li><strong>Discovering Pico</strong></li>
-  </ul>
-  <ul>
-    <li><a class="navlink" href="#">Home</a></li>
-    <li><a  class="navlink" href="#">About</a></li>
-    <li role="list" dir="rtl">
-      <a class="navlink" href="#" aria-haspopup="listbox">Categories</a>
-      <ul role="listbox">
-        <li><a>Photos</a></li>
-        <li><a>Articles</a></li>
-        <li><a>Projets</a></li>
+    <nav class="container-fluid" data-theme="light">
+      <ul>
+        <li><strong>Discovering Pico</strong></li>
       </ul>
-    </li>
-  </ul>
-</nav>
-  </header>
+      <ul>
+        <li><a href="#" class="contrast">Home</a></li>
+        <li><a href="#" class="contrast">About</a></li>
+        <li>
+          <details role="list">
+            <summary aria-haspopup="listbox" class="contrast">
+              Catégories
+            </summary>
+            <ul role="listbox" data-theme="light">
+              <li><a>Photos</a></li>
+              <li><a>Articles</a></li>
+              <li><a>Projets</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container">
+        <h1>Journey into Pico.css</h1>
+        <a href="#">https://picocss.com</a>
+      </div>
 
-    <main class="container">
-    <div class="headings">
-  <h1>Journey into Pico.css</h1>
-    <a href="#" class="secondary">https://picocss.com</a>
-</div>
+      <div class="container">
+        <div class="grid">
+          <article>
+            <img src="assets/img/woman-1836601_1920.jpg" alt="" />
+            <div class="container-fluid">
+              <h4>Visit Components classless</h4>
+            </div>
+            <div class="container-fluid">
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <a href="#" role="button">Read More</a>
+          </article>
 
-<div class="grid">
-  <div>
-    <article>
-      <header><img src="https://picsum.photos/seed/picsum/400/300"></header>
-        <h6>Lorem ipsum dolor sit amet</h6>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
-      <footer><button>Read more</button></footer>
-    </article>
-  </div>
+          <article>
+            <img src="assets/img/waterfall.jpg" alt="" />
+            <div class="container-fluid">
+              <h4>Facing Cascade Style Sheet</h4>
+            </div>
+            <div class="container-fluid">
+              <p>Some quick example text.</p>
+            </div>
+            <a href="#" role="button">Read More</a>
+          </article>
 
-  <div>
-    <article>
-      <header><img src="https://picsum.photos/seed/picsum/400/300"></header>
-        <h6>Lorem ipsum dolor sit amet</h6>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        <footer><button>Read more</button></footer>
-    </article>
-  </div>
+          <article>
+            <img src="assets/img/river.jpg" alt="" />
+            <div class="container-fluid">
+              <h4>Contemplate Form Inputs river</h4>
+            </div>
+            <div class="container-fluid">
+              <p>Make up the bulk of the card's content.</p>
+            </div>
+            <a href="#" role="button">Read More</a>
+          </article>
 
-  <div>
-    <article>
-      <header><img src="https://picsum.photos/400/300"></header>
-        <h6>Lorem ipsum dolor sit amet</h6>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        <footer><button>Read more</button></footer>
-    </article>
-  </div>
+          <article>
+            <img src="assets/img/child.jpg" alt="" />
+            <div class="container-fluid">
+              <h4>Enjoy no Javascript</h4>
+            </div>
+            <div class="container-fluid">
+              <p>
+                Build on the card title and make up the bulk of the card's
+                content.
+              </p>
+            </div>
+            <a href="#" role="button">Read More</a>
+          </article>
+        </div>
+      </div>
 
-  <div>
-    <article>
-      <header><img src="https://picsum.photos/400/300"></header>
-        <h6>Lorem ipsum dolor sit amet</h6>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        <footer><button>Read more</button></footer>
-    </article>
-  </div>
-</div>
-</main>
-<footer>  © 2023 Wilders | images @picsum</footer>
+      <div class="container-fluid">
+        <h2>The CSS Framework are very useful</h2>
+
+        <p>Learning them comes with pratice</p>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid">
+        <p>&#169 2023 wilders | images @picsum</p>
+      </div>
+    </footer>
   </body>
 </html>
