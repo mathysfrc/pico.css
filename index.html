@@ -1,17 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discovering Pico.css</title>
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="css/pico.classless.min.css">
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+  <body>
+
+    <header>
+    <nav>
+  <ul>
+    <li><strong>Discovering Pico</strong></li>
+  </ul>
+  <ul>
+    <li><a class="navlink" href="#">Home</a></li>
+    <li><a  class="navlink" href="#">About</a></li>
+    <li role="list" dir="rtl">
+      <a class="navlink" href="#" aria-haspopup="listbox">Categories</a>
+      <ul role="listbox">
+        <li><a>Photos</a></li>
+        <li><a>Articles</a></li>
+        <li><a>Projets</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </header>
+
+    <main class="container">
+    <div class="headings">
+  <h1>Journey into Pico.css</h1>
+    <a href="#" class="secondary">https://picocss.com</a>
+</div>
+
+<div class="grid">
+  <div>
     <article>
-        <header>Header</header>
-        Body
-        <footer>Footer</footer>
-      </article>
-</body>
+      <header><img src="https://picsum.photos/seed/picsum/400/300"></header>
+        <h6>Lorem ipsum dolor sit amet</h6>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
+      <footer><button>Read more</button></footer>
+    </article>
+  </div>
+
+  <div>
+    <article>
+      <header><img src="https://picsum.photos/seed/picsum/400/300"></header>
+        <h6>Lorem ipsum dolor sit amet</h6>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        <footer><button>Read more</button></footer>
+    </article>
+  </div>
+
+  <div>
+    <article>
+      <header><img src="https://picsum.photos/400/300"></header>
+        <h6>Lorem ipsum dolor sit amet</h6>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <footer><button>Read more</button></footer>
+    </article>
+  </div>
+
+  <div>
+    <article>
+      <header><img src="https://picsum.photos/400/300"></header>
+        <h6>Lorem ipsum dolor sit amet</h6>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        <footer><button>Read more</button></footer>
+    </article>
+  </div>
+</div>
+</main>
+<footer>  © 2023 Wilders | images @picsum</footer>
+  </body>
 </html>
